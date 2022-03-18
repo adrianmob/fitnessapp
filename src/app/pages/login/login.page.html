@@ -1,0 +1,17 @@
+<ion-content class="ion-padding">
+  <ion-img src="assets/imgs/logo.png"></ion-img>
+  <h1>Bienvenido de Nuevo</h1>
+  <p>Para encontrar tu perfil, ingresa tu usuario de cliente y contraseña.</p>
+  <ion-item>
+    <ion-label position="floating">Cliente</ion-label>
+    <ion-input [(ngModel)]="cliente"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-button class="button" expand="block" (click)="login()"
+    >Iniciar Sesión</ion-button
+  >
+  <ion-button class="button" expand="block" fill="outline">Cancelar</ion-button>
+</ion-content>

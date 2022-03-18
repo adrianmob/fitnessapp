@@ -1,0 +1,138 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1>Lunes</h1>
+  <div>
+    <swiper
+      [slidesPerView]="1.7"
+      [pagination]="{
+      type: 'progressbar'
+    }"
+      [navigation]="true"
+      [spaceBetween]="30"
+    >
+      <ng-template swiperSlide *ngFor="let lune of lunes">
+        <div class="cat" (click)="goPage('play-exercise',lune)">
+          <img src="assets/imgs/3.png" />
+          <p>{{lune.name}}</p>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <h1>Martes</h1>
+  <div>
+    <swiper
+      [slidesPerView]="1.7"
+      [pagination]="{
+      type: 'progressbar'
+    }"
+      [navigation]="true"
+      [spaceBetween]="30"
+    >
+      <ng-template swiperSlide *ngFor="let martes of martes">
+        <div class="cat" (click)="goPage('play-exercise',martes)">
+          <img src="assets/imgs/3.png" />
+          <p>{{martes.name}}</p>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <h1>Miercoles</h1>
+  <div>
+    <swiper
+      [slidesPerView]="1.7"
+      [pagination]="{
+      type: 'progressbar'
+    }"
+      [navigation]="true"
+      [spaceBetween]="30"
+    >
+      <ng-template swiperSlide *ngFor="let miercole of miercoles">
+        <div class="cat" (click)="goPage('play-exercise',miercole)">
+          <img src="assets/imgs/3.png" />
+          <p>{{miercole.name}}</p>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <h1>Jueves</h1>
+  <div>
+    <swiper
+      [slidesPerView]="1.7"
+      [pagination]="{
+      type: 'progressbar'
+    }"
+      [navigation]="true"
+      [spaceBetween]="30"
+    >
+      <ng-template swiperSlide *ngFor="let jueve of jueves">
+        <div class="cat" (click)="goPage('play-exercise',jueve)">
+          <img src="assets/imgs/3.png" />
+          <p>{{jueve.name}}</p>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <h1>Viernes</h1>
+  <div>
+    <swiper
+      [slidesPerView]="1.7"
+      [pagination]="{
+      type: 'progressbar'
+    }"
+      [navigation]="true"
+      [spaceBetween]="30"
+    >
+      <ng-template swiperSlide *ngFor="let vierne of viernes">
+        <div class="cat" (click)="goPage('play-exercise',vierne)">
+          <img src="assets/imgs/3.png" />
+          <p>{{vierne.name}}</p>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+
+  <h1>Sabados</h1>
+  <div>
+    <swiper
+      [slidesPerView]="1.7"
+      [pagination]="{
+      type: 'progressbar'
+    }"
+      [navigation]="true"
+      [spaceBetween]="30"
+    >
+      <ng-template swiperSlide *ngFor="let sabado of sabados">
+        <div class="cat" (click)="goPage('play-exercise',sabado)">
+          <img src="assets/imgs/3.png" />
+          <p>{{sabado.name}}</p>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+
+  <h1>Domingos</h1>
+  <div>
+    <swiper
+      [slidesPerView]="1.7"
+      [pagination]="{
+      type: 'progressbar'
+    }"
+      [navigation]="true"
+      [spaceBetween]="30"
+    >
+      <ng-template swiperSlide *ngFor="let domingo of domingos">
+        <div class="cat" (click)="goPage('play-exercise',domingo)">
+          <img src="assets/imgs/3.png" />
+          <p>{{domingo.name}}</p>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+</ion-content>

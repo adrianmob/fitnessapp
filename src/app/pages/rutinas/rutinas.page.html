@@ -1,0 +1,28 @@
+<ion-content class="ion-padding">
+  <div>
+    <ion-button (click)="mostrarMenu()" class="menu">
+      <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+    </ion-button>
+  </div>
+  <h1>Mis entrenamientos</h1>
+  <ion-img
+    src="assets/imgs/image.png"
+    (click)="goPage('entrenamientos', '')"
+  ></ion-img>
+  <h2>Por categoria</h2>
+  <swiper
+    [slidesPerView]="1.7"
+    [pagination]="{
+      type: 'progressbar'
+    }"
+    [navigation]="true"
+    [spaceBetween]="30"
+  >
+    <ng-template swiperSlide *ngFor="let category of categories">
+      <div class="cat" (click)="goPage('list-exercise',category)">
+        <img src="assets/imgs/3.png" />
+        <p>{{category.name}}</p>
+      </div>
+    </ng-template>
+  </swiper>
+</ion-content>

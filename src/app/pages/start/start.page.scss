@@ -1,0 +1,24 @@
+.container-banner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  .ion-img-cont {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .container-buttons {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .button {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1>{{name}}</h1>
+  <div class="container_exercise">
+    <div
+      class="exercise"
+      *ngFor="let exercise of exercises"
+      (click)="goPage('play-exercise', exercise)"
+    >
+      <img src="assets/imgs/3.png" />
+      <p>VER</p>
+      <p>{{exercise.name}}</p>
+    </div>
+  </div>
+</ion-content>

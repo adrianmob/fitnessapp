@@ -1,0 +1,18 @@
+.container_exercise {
+  display: flex;
+  flex-direction: column;
+  .exercise {
+    background-color: #e75e30;
+    padding-bottom: 1px;
+    max-width: 200px;
+    margin-bottom: 25px;
+
+    p {
+      margin: 10px 0px 10px 10px;
+      text-transform: uppercase;
+      color: white;
+      font-weight: 700;
+      text-align: initial;
+    }
+  }
+}

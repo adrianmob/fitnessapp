@@ -1,0 +1,20 @@
+.menu {
+  --background: transparent;
+  --color: "black";
+  --padding-top: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-bottom: 0;
+  --background-activated: white;
+}
+.cat {
+  margin: 20px 10px 0 0;
+  background-color: #e75e30;
+  p {
+    margin: 10px 0px 20px 10px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    text-align: initial;
+  }
+}

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="padding">{{video.name}}</h1>
+  <div class="video-container">
+    <iframe
+      [src]="url"
+      frameborder="0"
+      allow="accelerometer; autoplay"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <p class="padding">{{video.description}}</p>
+  <div class="padding" *ngIf="exist">
+    <ion-button
+      (click)="setComplete()"
+      expand="block"
+      [disabled]="video.complete"
+      >Marcar como completado</ion-button
+    >
+  </div>
+</ion-content>
